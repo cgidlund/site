@@ -1,0 +1,39 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta property="fb:app_id"      content="" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}index.html" />
+  <meta property="og:title"       content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.shareTitle | escape }}{% endif %}" />
+  <meta property="og:description" content="{% if page.sharetext %}{{ page.sharetext | escape }}{% else %}{{ site.shareShort | escape }}{% endif %}" />
+  <meta property="og:image"       content="{% if page.share-image %}{{ page.share-image | prepend: site.url }}{% else %}{{ site.shareImage }}{% endif %}" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.shareTitle | escape }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.sharetext %}{{ page.sharetext | escape }}{% else %}{{ site.shareShort | escape }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.share-image %}{{ page.share-image | prepend: site.url }}{% else %}{{ site.shareImage }}{% endif %}">
+
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="author" href="/humans.txt" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+  {% include style.html %}
+
+  {% comment %}
+  <link rel="stylesheet" href="{{ "/assets/css/jekyll-boilerplate.min.css" | prepend: site.baseurl | append: site.version }}">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="twitter:card" content="summary">
+  {% endcomment %}
+
+</head>
