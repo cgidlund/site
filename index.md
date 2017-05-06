@@ -5,5 +5,5 @@ layout: default
 
 <h2>Christian Gidlund</h2>
 <h1>Frontend developer</h1>
-<a href="mailto:cgidlund@gmail.com">email me</a>
+<a href="mailto:cgidlund@gmail.com">contact me</a>
 

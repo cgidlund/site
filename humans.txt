@@ -1,0 +1,29 @@
+/* TEAM */
+
+    Christian Gidlund - Developer
+    Site: https://cgx.se/
+    Twitter: cgidlund
+    Agency: Freelance
+    Location: Bangkok, Thailand.
+
+
+
+/* THANKS */
+
+
+
+/* SITE */
+
+    Site Name: cgx.se
+    Site URL: https://cgx.se
+    Last update:
+    Standards: HTML5, CSS3
+    Components:
+    Software:
+    Buildware: Jekyll
+
+
+
+/* NOTES */
+
+

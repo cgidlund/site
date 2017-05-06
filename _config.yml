@@ -1,1 +1,12 @@
-title: My site
+# Site settings
+title: Christian Gidlund - Frontend developer
+email: cgidlund@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to Christian Gidlunds place on the net.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cgx.se" # the base hostname & protocol for your site
+shareTitle: "Christian Gidlund - Frontend developer"
+shareLong:
+shareShort: "Welcome to Christian Gidlunds place on the net."
+shareImage: ""
+version: "?v=0.0.1"

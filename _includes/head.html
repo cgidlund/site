@@ -14,12 +14,21 @@
   <meta property="og:image"       content="{% if page.share-image %}{{ page.share-image | prepend: site.url }}{% else %}{{ site.shareImage }}{% endif %}" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@">
+  <meta name="twitter:site" content="@cgidlund">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.shareTitle | escape }}{% endif %}">
   <meta name="twitter:description" content="{% if page.sharetext %}{{ page.sharetext | escape }}{% else %}{{ site.shareShort | escape }}{% endif %}">
   <meta name="twitter:image" content="{% if page.share-image %}{{ page.share-image | prepend: site.url }}{% else %}{{ site.shareImage }}{% endif %}">
 
-  <link rel="shortcut icon" href="/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Christian Gidlund">
+
+  <link rel="apple-touch-icon" href="/assets/icons/app/app-icon@50x50.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/app/app-icon@76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/app/app-icon@120x120.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/app/app-icon@180x180.png">
+
+  <link rel="shortcut icon" href="/assets/icons/app/favicon.png">
   <link rel="author" href="/humans.txt" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
