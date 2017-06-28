@@ -5,13 +5,9 @@
 
   <body>
 
-    <h3 class="site-title">cgx.se</h3>
+    {{ content }}
 
-    <div class="center-text">
-      <div class="site-content" role="main">
-        {{ content }}
-      </div>
-    </div>
+    {% include script.html %}
 
     {% include _modules/googleanalytics.html %}
 

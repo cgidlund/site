@@ -10,3 +10,12 @@ shareLong:
 shareShort: "Welcome to Christian Gidlunds place on the net."
 shareImage: ""
 version: "?v=0.0.1"
+
+# Permalink setting
+permalink: pretty
+
+# Collections
+collections:
+  projects:
+    output: true
+

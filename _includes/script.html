@@ -1,0 +1,49 @@
+<script type="text/javascript" charset="utf-8" async defer>
+
+  var CGX = CGX || {};
+
+  CGX.Site = (function () {
+    'use strict';
+
+    // Settings
+    var _s = {
+      topMenuScroll: 10
+    };
+
+    // Vars
+    var _topMenu;
+
+    // Functions
+
+    function _bindEvents() {
+      var scrollEvent = window.addEventListener( 'scroll', _onScroll );
+    }
+
+    function _init() {
+      _topMenu = document.querySelector( '.site-title' );
+    }
+
+    function _onScroll() {
+      var _scrollPos = this.pageYOffset;
+
+      _scrollPos > _s.topMenuScroll ?
+        _topMenu.classList.add( 'scrolled' ) :
+        _topMenu.classList.remove( 'scrolled' );
+    }
+
+    return {
+      init: function() {
+        _bindEvents();
+        _init();
+      }
+    };
+  })();
+
+  CGX.init = function() {
+    'use strict';
+    CGX.Site.init();
+  }
+
+  CGX.init();
+
+</script>
